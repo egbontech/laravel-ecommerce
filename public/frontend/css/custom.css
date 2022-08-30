@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@100;300;400;500;700&display=swap');
+body{font-family: 'Roboto' ,sans-serif !important;}
+#bg-black{background: #fff !important;position: fixed !important;top:0px !important;width: 100%;z-index: 5;color:#101010}
+#bg-black a{color:#191919 !important;opacity: 0.8;}
+#bg-black a:hover{opacity: 0.6;}
+.category a{text-decoration: none;color:#03254c}
+.header{height: 700px;background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../../assets/images/slider.jpg);background-size:cover;background-repeat: no-repeat;
+ background-position:center;display: flex;align-items: center;margin-top:50px;}
+.intro{margin-left: 100px;color: #ccc;width: 50%}
+.intro h1{font-size: 60px;font-weight:bolder;line-height: 80px;}
+.intro p{font-size: 35px;font-weight: bolder;margin-bottom: 40px}
+.intro a{color: #ccc;text-decoration: none;padding: 12px 28px;font-weight: 600;transition: 0.5s ease-in-out;border: 3px solid #185;}
+.intro a:hover{background: #185;color: #ccc;}
+.price{display: flex;justify-content: center;}
+.view{display:flex;justify-content:center;}
+.link1{text-decoration: none;color:#191919}
+.link{text-decoration: none;color:#191919;padding: 8px 20px;background: transparent;color:#185;text-align: center;font-weight: 500;transition: 0.6s ease-in-out;border:2px solid #185}
+.link:hover{background: #185;color:#f7f7f7}
+.link1:hover{opacity: 0.7;color:#185}
+#cart2{display:none}
+#cart1{font-weight:400;padding:2px 12px;border-radius:30px;}
+#cart{padding-top: 60px;}
+#checkout{display: flex;align-items: center;justify-content: space-between;}
+.search{width:40%;margin-left: 10%;}
+.ul-menu{z-index:10}
+.footer{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width:991px)
+  {
+      #cart1{display: none;}
+      #cart2{display: block;}
+
+  }
+@media (max-width:650px)
+  {
+    #bg-black a{font-weight: 600 !important;color:grey}
+    .header{height: 700px;}
+    .intro{margin-left: 30px;width: 90%;}
+    .intro h1{font-size: 45px;line-height: 55px;}
+    .intro p{font-size: 25px;}
+    .search{width:60%;margin-left: 0;}
+  }
+@media (max-width:400px)
+  {
+    .intro h1{font-size: 35px;}
+    .intro p{font-size: 20px;}
+
+  }
